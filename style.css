@@ -1,0 +1,54 @@
+.hidden, .filter-hide {
+	display: none;
+}
+
+.filter-show {
+	display: table-row;
+}
+
+table {
+	width: 80%;
+	border-collapse: collapse;
+}
+
+/*tr[data-parentid="0"]:nth-of-type(even) {
+	background: #ececec;
+}*/
+tr, th {
+	border: 1px solid #cecece;
+	padding: 10px 10px;
+}
+th:first-child {
+	width: 50px;
+}
+
+.extended::before {
+	content: "\0002B";
+    cursor: pointer;
+    background: #ececec;
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+	font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.extended.open::before {
+	content: "\02212";
+}
+
+.child-row {
+	background: #ECECEC;
+}
+
+.filter-field {
+	cursor: pointer;
+}
+
+.filter-field::after {
+	content: "\021C5";
+	margin-left: 5px;
+}
