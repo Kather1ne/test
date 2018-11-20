@@ -42,12 +42,14 @@ $(function(){
 
 		$('#table-filter tr').on('click', function() {
 			let dataId = $(this).attr('data-id');
+			$(this).addClass('parent-row');
 			let childrenNode = $('tr[data-parentID=' + dataId +']');
 			if (childrenNode.hasClass('hidden')) {
 				childrenNode.removeClass('hidden');
 				$(this).find('.extended').addClass('open');
 			}
 			else {
+				$(this).removeClass('parent-row');
 				childrenNode.addClass('hidden');
 				$(this).find('.extended').removeClass('open');
 				childrenNode.each(function find(i, item){

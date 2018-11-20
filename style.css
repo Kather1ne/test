@@ -41,7 +41,10 @@ th:first-child {
 }
 
 .child-row {
-	background: #ECECEC;
+	background: #f8f8f8;
+}
+.parent-row {
+	background: #cecece;
 }
 
 .filter-field {
@@ -52,3 +55,4 @@ th:first-child {
 	content: "\021C5";
 	margin-left: 5px;
 }
+
