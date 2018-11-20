@@ -51,7 +51,7 @@ $(function(){
 				childrenNode.addClass('hidden');
 				$(this).find('.extended').removeClass('open');
 				childrenNode.each(function find(i, item){
-					$(this).find('.extended').removeClass('open');
+					$(item).find('.extended').removeClass('open');
 
 					let childDataID = $(item).attr('data-id');
 					childrenChildNode = $('tr[data-parentID=' + childDataID +']');
